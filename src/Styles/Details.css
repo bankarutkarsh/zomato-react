@@ -1,0 +1,255 @@
+
+/* Navbar CSS */
+
+.Dnav{
+    background-color: #CE0505;
+    height: 100px;
+}
+
+.Dlogo{
+    width: 75px;
+    height: 75px;
+    margin-top: 12px;
+    margin-left: 110px;
+    border-radius: 75px;
+    background-color: #FFFFFF;
+    color: #EB2929;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.DloginButDiv{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin-top: 39px;
+    left: 1165px;
+}
+
+.DloginBut{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color:#CE0505;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.DaccountButDiv{
+    margin-top: 30px;
+    left: 1235px;
+    display: inline-block;
+    position: absolute;
+}
+
+.DaccountBut{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border: 1px solid #FFFFFF;
+    padding: 9px;
+    color: #FFFFFF;
+    background-color:#CE0505;
+    border-radius: 3px;
+}
+
+.DImageContainer{
+    width: 80%;
+    height: 60vh;
+    margin: 5em 9em 5em 9em;
+}
+
+.DImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Dgallery_button{
+    margin: 23em 0em 0em -17em;
+    width: 15em;
+    height: 3em;
+    position: absolute;
+    opacity: 0.8;
+    color: #192F60;
+    background-color: #FBFBFB;
+    font-weight: 600;
+    border: unset;
+    border-radius: 5px;
+}
+
+
+.DResName{
+    margin: -57px 0px 0px 142px;
+    font-size: 33px;
+    font-weight: 600;
+    color: #192F60;
+}
+
+.Dorder_btn {
+    float: right;
+    width: 221px;
+    height: 57px;
+    font-size: large;
+    color: #fff; 
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 159px 0 0;
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+.tabs {
+    position: relative;
+    margin: 100px 58px;
+    clear: both;
+    /* background: #fff; */
+    min-height: 200px;
+}
+
+.tab {
+    float: left;
+}
+
+.tab label {
+    margin-left: 80px;
+    position: relative;
+    left: 6px;
+    padding-bottom: 8px;
+    top: -50px;
+    margin-top: 3px;
+    font-size: larger;
+    font-weight: 500;
+    color: #192F60;
+}
+
+.content {
+    position: absolute;
+    width: 87%;
+    color: #192F60;
+    top: -10px;
+    left: 84px;
+    right: 0;
+    bottom: 0;
+    padding: 30px 0;
+    border-top: 2px solid #D2D9E6;
+    opacity: 0;
+}
+
+.tab [type=radio]:checked~label {
+    z-index: 1;
+    border-bottom: solid 3px red;
+
+}
+
+[type=radio]:checked~label~.content {
+    z-index: 0;
+    opacity: 1;
+}
+
+.DconAbt{
+    font-size: 25px;
+    margin-bottom: 29px;
+    font-weight: 600;
+}
+
+.Dresdetails{
+    margin-bottom: 7px;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Dphno{
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.Dno{
+    font-size: large;
+    color: #F67082;
+    margin-bottom: 20px;
+}
+
+.Dname{
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.DAdd{
+    font-size: large;
+}
+
+/* MODAL */
+
+.modal_cross {
+    float: right;
+    color: #000000;
+}
+
+.modal_subtitle {
+    font-size: 13px;
+    color: #696B78;
+}
+
+.modal_image {
+    width: 105px;
+    height: 90px;
+    border-radius: 10px;
+    margin-top: -66px;
+    margin-left: 17px;
+}
+
+.add {
+    position: absolute;
+    margin-top: -1rem;
+    left: 78.5%;
+}
+
+.qty_set {
+    position: absolute;
+    margin-top: 7px;
+    left: 75.9%;
+}
+
+.qty {
+    width: 25px;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.price_box {
+    margin: -18px -20px -20px -20px;
+    position: relative;
+    z-index: 1;
+    height: 70px;
+    padding: 17px 0px 10px 34px;
+}
+
+.next_box {
+    margin: 20px -32px -17px -32px;
+    position: relative;
+    z-index: 1;
+    height: 75px;
+    padding-right: 50px;
+}
+
+.form-group ::-ms-input-placeholder { /* Edge Browser */
+    color: #B4B5BC;
+}
+
+.form-group ::placeholder {
+    color: #B4B5BC;
+    opacity: 1; /* Other Browser */
+}
+
+/* Gallery Modal */
+
+.bannerImg {
+    width: auto;
+    height: 33rem;
+    border-radius: 21px;
+}

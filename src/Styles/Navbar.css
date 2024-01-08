@@ -1,0 +1,41 @@
+.logo_google{
+    width: 12%;
+    margin-right: 15px;
+}
+.logo_mail{
+    width: 18%;
+    margin-right: 6px;
+    margin-left: -11px;
+    border-radius: 50%;
+}
+.Nbuttons{
+    margin-left: 170px;
+}
+
+.Nlogin{
+    font-weight: lighter;
+    color: #FFFFFF;
+    font-size: x-large;
+}
+
+.log_but{
+    border: 1px solid #C7C7C7;
+    color: #192F60;
+}
+
+.Nlogout{
+    margin-left: 151px;
+}
+.NLlogout{
+    margin-left: 285px;
+}
+
+.head{
+    color: #192F60;
+}
+
+.Nmodal_cross{
+    float: right;
+    margin-top: 21px;
+    color: #192F60;
+}
