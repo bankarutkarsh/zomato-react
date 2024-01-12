@@ -170,7 +170,7 @@ class Navbar extends React.Component{
                                     
                                     <p className='text-light fw-3 fs-5 mx-3 pt-2'>{loggedUser.user[0].name}</p>
                                     <button type="button" className="btn btn-outline-light fs-5 px-3" 
-                                    onClick={() => window.open("http://localhost:3000", "_self")}>Logout</button>
+                                    onClick={() => window.open("https://zomato-react-gamma.vercel.app", "_self")}>Logout</button>
                                         
                                 </form>
                             )}
@@ -300,7 +300,7 @@ class Navbar extends React.Component{
                     <h2 className='fw-bolder ms-3 mt-3'> Login failed </h2>
                     <div className='next_box' style={{ backgroundColor: "#F5F8FF"}}>
                         <button type='submit' value='submit' className="btn btn-danger" style={{ float: 'right', marginTop: '20px' }} onClick={() => {
-                            window.open("http://localhost:3000", "_self");}}> Home </button>
+                            window.open("https://zomato-react-gamma.vercel.app", "_self");}}> Home </button>
                     </div>      
                 </Modal>
 
