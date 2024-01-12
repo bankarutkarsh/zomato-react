@@ -11,7 +11,7 @@ const Router = () =>{
 
     useEffect(() => {
         const getUser = () => {
-            fetch("http://localhost:5500/auth/login/success", {
+            fetch("https://zomato-apivercel.vercel.app/auth/login/success", {
                 method: "GET",
                 credentials: "include",
                 headers: {

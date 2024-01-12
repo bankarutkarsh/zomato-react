@@ -29,7 +29,7 @@ class Filter extends React.Component{
         this.setState ({mealtype: type});
 
         axios({
-            url: 'http://localhost:5500/filter',
+            url: 'https://zomato-apivercel.vercel.app/filter',
             method: 'POST',
             headers: { 'Content-Type': 'Application/JSON'}
         })
@@ -39,7 +39,7 @@ class Filter extends React.Component{
         .catch(err => { console.log(err)})
 
         axios({
-            url: 'http://localhost:5500/locations',
+            url: 'https://zomato-apivercel.vercel.app/locations',
             method: 'GET',
             headers: {'Content-Type': 'Application/JSON'}
         })
@@ -62,7 +62,7 @@ class Filter extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/filter',
+            url: 'https://zomato-apivercel.vercel.app/filter',
             method: 'POST',
             headers: {'Content-Type': 'Application/JSON'},
             data: filterObj
@@ -89,7 +89,7 @@ class Filter extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/filter',
+            url: 'https://zomato-apivercel.vercel.app/filter',
             method: 'POST',
             headers: {'Content-Type': 'Application/JSON'},
             data: filterObj
@@ -115,7 +115,7 @@ class Filter extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/filter',
+            url: 'https://zomato-apivercel.vercel.app/filter',
             method: 'POST',
             headers: {'Content-Type': 'Application/JSON'},
             data: filterObj
@@ -141,7 +141,7 @@ class Filter extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/filter',
+            url: 'https://zomato-apivercel.vercel.app/filter',
             method: 'POST',
             headers: {'Content-Type': 'Application/JSON'},
             data: filterObj
@@ -177,7 +177,7 @@ class Filter extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/filter',
+            url: 'https://zomato-apivercel.vercel.app/filter',
             method: 'POST',
             headers: {'Content-Type': 'Application/JSON'},
             data: filterObj

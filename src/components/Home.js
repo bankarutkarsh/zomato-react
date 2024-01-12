@@ -22,7 +22,7 @@ class Home extends React.Component{
         
     componentDidMount(){
         axios({
-            url: 'http://localhost:5500/mealtypes',
+            url: 'https://zomato-apivercel.vercel.app/mealtypes',
             method: 'GET',
             headers: { 'Content-Type': 'Application/JSON'}
         })
@@ -32,7 +32,7 @@ class Home extends React.Component{
         .catch(err => {console.log(err)})
 
         axios({
-            url: 'http://localhost:5500/locations',
+            url: 'https://zomato-apivercel.vercel.app/locations',
             method: 'GET',
             headers: { 'Content-Type': 'Application/JSON'}
         })
@@ -47,7 +47,7 @@ class Home extends React.Component{
         
 
         axios({
-            url: `http://localhost:5500/restaurants/${location.target.value}`,
+            url: `https://zomato-apivercel.vercel.app/${location.target.value}`,
             method: 'GET',
             headers: { 'Content-Type': 'Application/JSON'}
         })

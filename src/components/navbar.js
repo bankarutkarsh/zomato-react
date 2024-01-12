@@ -61,11 +61,11 @@ class Navbar extends React.Component{
     }
 
     google = () => {
-        window.open("http://localhost:5500/auth/google", "_self");
+        window.open("https://zomato-apivercel.vercel.app/auth/google", "_self");
     };
 
     logout = () => {
-        window.open("http://localhost:5500/auth/logout", "_self");
+        window.open("https://zomato-apivercel.vercel.app/auth/logout", "_self");
     };
 
     // Insert to Name
@@ -95,7 +95,7 @@ class Navbar extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/signup',
+            url: 'https://zomato-apivercel.vercel.app/signup',
             method: 'POST',
             headers: { 'Content-Type': 'application/JSON' },
             data: regObj
@@ -116,7 +116,7 @@ class Navbar extends React.Component{
         }
 
         axios({
-            url: 'http://localhost:5500/login',
+            url: 'https://zomato-apivercel.vercel.app/login',
             method: 'POST',
             headers: { 'Content-Type': 'application/JSON' },
             data: loginObj

@@ -42,7 +42,7 @@ class Details extends React.Component{
         const { restaurant } = qs;
         
         axios({
-            url: `http://localhost:5500/restaurant/${restaurant}`,
+            url: `https://zomato-apivercel.vercel.app/restaurant/${restaurant}`,
             method: 'GET',
             headers: { 'Content-Type': 'Application/JSON'}
         })
@@ -58,7 +58,7 @@ class Details extends React.Component{
 
         if (state === "menuModalOpen" && value === true) {
             axios({
-                url: `http://localhost:5500/menu/${resId}`,
+                url: `https://zomato-apivercel.vercel.app/menu/${resId}`,
                 method: 'GET',
                 headers: { 'Content-Type': 'application/JSON' }
             })
@@ -101,7 +101,7 @@ class Details extends React.Component{
             order_id: data.id,
             handler: async(response) => {
                 try {
-                    const verifyUrl = "http://localhost:5500/api/payment/verify";
+                    const verifyUrl = "https://zomato-apivercel.vercel.app/api/payment/verify";
                     const { data } = await axios.post(verifyUrl, response);
                 }catch(error) {
                     console.log(error);
@@ -116,7 +116,7 @@ class Details extends React.Component{
         const { subtotal } = this.state;
 
         try{
-            const orderUrl = "http://localhost:5500/api/payment/orders";
+            const orderUrl = "https://zomato-apivercel.vercel.app/api/payment/orders";
             const { data } = await axios.post(orderUrl, { amount: subtotal });
             console.log(data.data);
             this.initPayment(data.data);
