@@ -47,7 +47,7 @@ class Home extends React.Component{
         
 
         axios({
-            url: `https://zomato-apivercel.vercel.app/${location.target.value}`,
+            url: `https://zomato-apivercel.vercel.app/restaurants/${location.target.value}`,
             method: 'GET',
             headers: { 'Content-Type': 'Application/JSON'}
         })
