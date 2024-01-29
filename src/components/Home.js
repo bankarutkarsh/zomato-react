@@ -2,6 +2,7 @@ import React from 'react'
 import '../Styles/Home.css'
 import axios from 'axios'
 import navHook from './nav'
+import { Analytics } from '@vercel/analytics/react';
 
 class Home extends React.Component{
 
@@ -106,7 +107,9 @@ class Home extends React.Component{
         const{ locations,mealtypes} = this.state;
 
         return(
+            
             <div>
+                <Analytics />
                 {/*<!--Upper Part-->*/}
                 <div className="Hupper_part p-0 center ">
                     {/*<!--Backgound Image-->*/}
