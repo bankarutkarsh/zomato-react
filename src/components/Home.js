@@ -3,6 +3,7 @@ import '../Styles/Home.css'
 import axios from 'axios'
 import navHook from './nav'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 class Home extends React.Component{
 
@@ -110,6 +111,7 @@ class Home extends React.Component{
             
             <div>
                 <Analytics />
+                <SpeedInsights />
                 {/*<!--Upper Part-->*/}
                 <div className="Hupper_part p-0 center ">
                     {/*<!--Backgound Image-->*/}
